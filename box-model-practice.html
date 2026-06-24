@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Practice</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        /* ==========================
+           Exercise 1
+           ========================== */
+
+        .box-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .demo-box {
+            width: 200px;
+            padding: 25px;
+            border: 8px solid #333;
+            margin: 20px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* ==========================
+           Exercise 2
+           ========================== */
+
+        /*
+        Original:
+        width:300px
+        padding:20px left + 20px right
+        Total = 340px
+
+        Fix:
+        box-sizing:border-box
+        */
+
+        .fixed-box {
+            width: 300px;
+            padding: 20px;
+            border: none;
+            box-sizing: border-box;
+
+            background-color: lightgreen;
+            margin-top: 20px;
+        }
+
+        /* ==========================
+           Exercise 3
+           ========================== */
+
+        .card {
+            width: 300px;
+            border: 1px solid gray;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+        }
+
+        .card button {
+            padding: 10px 15px;
+            border: none;
+            background-color: steelblue;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .card button:hover {
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Box Model Practice</h1>
+
+    <!-- Exercise 1 -->
+    <section>
+        <h2>Exercise 1: Box Model Visualization</h2>
+
+        <div class="box-container">
+
+            <div class="demo-box">
+                <div class="label">Content</div>
+                Background color represents content area.
+            </div>
+
+            <div class="demo-box">
+                <div class="label">Padding</div>
+                Space between content and border.
+            </div>
+
+            <div class="demo-box">
+                <div class="label">Border</div>
+                Thick border is visible around content.
+            </div>
+
+            <div class="demo-box">
+                <div class="label">Margin</div>
+                Space outside the border separates boxes.
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Exercise 2 -->
+    <section>
+        <h2>Exercise 2: Fix the Broken Box</h2>
+
+        <p>
+            The original box became 340px wide because
+            20px left padding + 20px right padding were added
+            to the 300px width.
+        </p>
+
+        <p>
+            Solution: Use <code>box-sizing: border-box;</code>
+            so padding is included within the 300px width.
+        </p>
+
+        <div class="fixed-box">
+            Fixed Box (Total Width = 300px)
+        </div>
+    </section>
+
+    <!-- Exercise 3 -->
+    <section>
+        <h2>Exercise 3: Card Component</h2>
+
+        <div class="card">
+
+            <img
+                src="https://via.placeholder.com/260x150"
+                alt="Placeholder Image">
+
+            <h2>Card Title</h2>
+
+            <p>
+                This is a sample card component demonstrating
+                proper spacing using the CSS box model.
+            </p>
+
+            <button>Read More</button>
+
+        </div>
+    </section>
+
+</body>
+</html>
