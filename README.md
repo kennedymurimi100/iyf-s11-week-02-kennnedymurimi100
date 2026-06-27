@@ -2,7 +2,7 @@
 
 ## Author
 - **Name:** kennedymurimi
-- **GitHub:** [@kennedymurimi](https://github.com/kennedymurimi100)
+- **GitHub:** [@kennedymurimi100](https://github.com/kennedymurimi100)
 - **Date:** june24/Day 06, Year2026
 
 ## Project Description
