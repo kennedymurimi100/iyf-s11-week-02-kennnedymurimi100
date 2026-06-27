@@ -6,7 +6,7 @@
 - **Date:** june24/Day 06, Year2026
 
 ## Project Description
-Brief description of what you built and why.
+The css file hot to make the style of it in which can turn a beginners portfoliio file to an almost professional one .
 
 ## Technologies Used
 - HTML5
