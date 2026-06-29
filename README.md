@@ -29,8 +29,9 @@ This project is a responsive personal portfolio website built as part of the IYF
 ## How to Run
 
 1. Clone this repository:
-2. Open the project folder.
-3. Open `index.html` in your preferred web browser 
+   - https://github.com/kennedymurimi100/iyf-s11-week-02-kennnedymurimi100.git
+3. Open the project folder.
+4. Open `index.html` in your preferred web browser 
    Run `npm install` then `npm start`
 
 
